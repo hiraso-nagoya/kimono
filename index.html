@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>有限会社 平惣染色</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Noto Serif JP', serif;
+    }
+    .video-bg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+    .overlay {
+      position: relative;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    .logo-bar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-bar img {
+      height: 50px;
+    }
+    .logo-bar span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    .content {
+      margin-top: 15vh;
+    }
+    section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 90%;
+      color: white;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      margin: 0 0 1rem 0;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    @media (max-width: 768px) {
+      .logo-bar span {
+        font-size: 1.2rem;
+      }
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="背景.mp4" type="video/mp4" />
+  </video>
+
+  <div class="logo-bar">
+    <img src="ロゴ左上.png" alt="ロゴ" />
+    <span>有限会社 平惣染色</span>
+  </div>
+
+  <div class="overlay content">
+    <section>
+      <h1>平惣染色（ひらそうせんしょく）について</h1>
+      <p>着物の「<span style="color:red;">困った！</span>」は私たちにお任せください。<br>
+        平惣染色は、皆さまのお着物をもっと快適に楽しめるようサポートしています。</p>
+    </section>
+
+    <section>
+      <h2>主な加工内容</h2>
+      <p>
+        ・丸洗い、シミ抜き、色直し、染め替え、仕立て直し、寸法直し、他店での購入品でも構いません。<br>
+        お着物に関するあらゆるご相談に対応しています。
+      </p>
+    </section>
+  </div>
+</body>
+</html>
